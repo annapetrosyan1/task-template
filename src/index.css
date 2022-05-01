@@ -22,22 +22,24 @@
     font-size: 18px;
 }
 
-.headerLogo {
+.header__logo {
     display: flex;
     align-items: center;
     width: 170px;
     flex-shrink: 0;
 }
 
-.headerTitle {
+.header__title {
     font-size: 16px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255)
 }
 
-.headerNavigation {
+.header__nav {
     margin-left: 40px;
 }
 
-.headerSearch {
+.header__search {
     width: 100%;
     min-width: 100px;
     max-width: 500px;
@@ -51,7 +53,7 @@
 
 .tags {
     list-style: none;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .tag {
@@ -71,7 +73,11 @@
     font-size: 18px;
 }
 
-.footerNavigation {
+.audio {
+    margin: auto;
+}
+
+.footer__nav {
     display: flex;
     flex-direction: column;
 }
@@ -86,9 +92,9 @@
 }
 
 .content {
-    overflow: scroll;
+    overflow: auto;
     padding: 5px;
-    background-color: rgb(250, 200, 207);
+    background-color: rgb(255, 255, 255);
 }
 
 .category {
@@ -96,18 +102,21 @@
     padding-top: 20px;
 }
 
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 20px;
+    margin: 1%;
+}
+
 .item {
-    position: relative;
-    float: left;
     border-radius: 5px;
     width: 250px;
     height: 300px;
     background-color: rgb(250, 217, 240);
     overflow: hidden;
     font-family: inherit;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 30px 10px;
     border: 2px solid rgb(243, 103, 224);
 }
 
@@ -115,12 +124,24 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.item-container {
+.item__container {
     padding: 2px 16px;
 }
 
-.item-image{
+.item__image {
     width: 100%;
-    height: 75%;
+    height: 80%;
     justify-content: center;
+}
+
+.item__title {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.artists {
+    font-style: italic;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 10px;
 }

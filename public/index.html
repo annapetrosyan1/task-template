@@ -3,108 +3,108 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./images/icon.png" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
-    /> -->
+    />
     <title>Spotify App</title>
     <link rel="stylesheet" href="/template/src/index.css" />
   </head>
   <body class="app">
-    <!-- <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div> -->
     <header class="header">
-      <a href="" class="headerLogo link" href="/">
-        <img src="./images/icon.png" alt="Лого" width="32" heigth="32">
-        <h1 class="headerTitle">Spotify App</h1>
+      <a href="" class="header__logo link" href="/">
+        <img src="./images/icon.png" alt="Logo" width="32" heigth="32">
+        <h1 class="header__title">Spotify App</h1>
       </a>
-      <input type="search" class="headerSearch" placeholder="Найти трек..." />
-      <nav class="headerNavigation">
-        <a href="/" class="link">Подписка</a>
-        <a href="/" class="link">Профиль</a>
+      <input type="search" class="header__search" placeholder="Найти трек..." />
+      <nav class="header__nav">
+        <a href="/" class="link">Subscription</a>
+        <a href="/" class="link">Profile</a>
       </nav>
     </header>
     <aside class="accordion">
       <ul class="tags">
-        <li class="tag">Главная</li>
-        <li class="tag">Моя медиатека</li>
-        <li class="tag">Любимые треки</li>
+        <li class="tag">Main</li>
+        <li class="tag">My library </li>
+        <li class="tag">Favorite tracks</li>
       </ul>
     </aside>
     <main class="content">
-      <h2 class="category">Музончик для тебя</h2>
+      <h2 class="category">Music for you</h2>
       <div class="items">
         <div class="item">
-          <img src="./images/mix2.jpg" alt="mix day 2" class="item-image">
-          <div class="item-container">
-            <h4><b>Микс дня #2</b></h4>
-            <p><i>MiyaGi & Endspiel, Eminem, Kanye West...</i></p>
+          <img src="./images/mix2.jpg" alt="mix day 2" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Микс дня #2</h4>
+            <p class="artists">MiyaGi & Endspiel, Eminem, Kanye West...</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/mix3.jpg" alt="mix day 3" class="item-image">
-          <div class="item-container">
-            <h4><b>Микс дня #3</b></h4>
-            <p><i>Rihanna, Spice Girls, Acon...</i></p>
+          <img src="./images/mix3.jpg" alt="mix day 3" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Микс дня #3</h4>
+            <p class="artists">Rihanna, Spice Girls, Acon...</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/mix4.jpg" alt="mix day 4" class="item-image">
-          <div class="item-container">
-            <h4><b>Микс дня #4</b></h4>
-            <p><i>Mikhail Shufutinskiy, Irina Allegrova, Valeriy Meladze...</i></p>
+          <img src="./images/mix4.jpg" alt="mix day 4" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Микс дня #4</h4>
+            <p class="artists">Mikhail Shufutinskiy, Irina Allegrova, Valeriy Meladze...</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/mix5.jpg" alt="mix day 5" class="item-image">
-          <div class="item-container">
-            <h4><b>Микс дня #5</b></h4>
-            <p><i>One Direction, Ariana Grande, The Weeknd...</i></p>
+          <img src="./images/mix5.jpg" alt="mix day 5" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Микс дня #5</h4>
+            <p class="artists">One Direction, Ariana Grande, The Weeknd...</p>
           </div>
         </div>
       </div>
       <h2 class="category">Топ чарты</h2>
       <div class="items">
         <div class="item">
-          <img src="./images/top100.jpg" alt="top-100" class="item-image">
-          <div class="item-container">
-            <h4><b>Топ-100 за все время</b></h4>
-            <p>Топ треков во всем мире: треки, популярные прямо сейчас...</p>
+          <img src="./images/top100.jpg" alt="top-100" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Топ-100 за все время</h4>
+            <p class="artists">Топ треков во всем мире: треки, популярные прямо сейчас...</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/top50russia.jpg" alt="top-50 russia" class="item-image">
-          <div class="item-container">
-            <h4><b>Топ-50 Россия</b></h4>
-            <p>Rihanna, Spice Girls, Acon...</p>
+          <img src="./images/top50russia.jpg" alt="top-50 russia" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Топ-50 Россия</h4>
+            <p class="artists">Rihanna, Spice Girls, Acon...</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/mix2010.jpg" alt="mix 2010" class="item-image">
-          <div class="item-container">
-            <h4><b>Микс музыки 2010-х</b></h4>
-            <p>Lizzo и не только</p>
+          <img src="./images/mix2010.jpg" alt="mix 2010" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Микс музыки 2010-х</h4>
+            <p class="artists">Lizzo и не только</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/mainhits.png" alt="main hits" class="item-image">
-          <div class="item-container">
-            <h4><b>Главные хиты</b></h4>
-            <p>Актуальные хиты в России прямо сейчас</p>
+          <img src="./images/mainhits.png" alt="main hits" class="item__image">
+          <div class="item__container">
+            <h4 class="item__title">Главные хиты</h4>
+            <p class="artists">Актуальные хиты в России прямо сейчас</p>
           </div>
         </div>
-      </div>            
+      </div>          
     </main>
     <footer class="footer">
       <p>© 2022 anna petrosyan</p>
-        <nav class="footerNavigation">
+      <audio class="audio" controls="controls" src="./audio/Sting_-_Shape_Of_My_Heart.mp3">
+      </audio>
+        <nav class="footer__nav">
           <a class="link" href="./images/">Pricing</a>
           <a class="link"
-          href="t.me/aptrsn"
+          href="https://t.me/aptrsn"
           target="_blank"
-          rel="noopener">Связь с разработчиком</a>
+          rel="noopener">Telegram</a>
         </nav>
     </footer>
   </body>
