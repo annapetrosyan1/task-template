@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 4px 40px;
+    background-color: lightsteelblue;
+    grid-column: 1 / 3;
+    font-size: 18px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.header__title {
+    font-size: 16px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255)
+}
+
+.header__nav {
+    margin-left: 40px;
+}
+
+.header__search {
+    width: 100%;
+    min-width: 100px;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.accordion {
+    background-color: rgb(191, 245, 247);
+    padding: 10px;
+}
+
+.tags {
+    list-style: none;
+    font-size: 22px;
+}
+
+.tag {
+    cursor: pointer;
+}
+
+.tag:hover{
+    color: #606060
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightsteelblue;
+    grid-column: 1 / 3;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+
+.audio {
+    margin: auto;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    overflow: auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.category {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 20px;
+    margin: 1%;
+}
+
+.item {
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(250, 217, 240);
+    overflow: hidden;
+    font-family: inherit;
+    margin: 20px 30px 10px;
+    border: 2px solid rgb(243, 103, 224);
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.item__container {
+    padding: 2px 16px;
+}
+
+.item__title {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.artists {
+    font-style: italic;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+
+.item__image-wrap {
+    height: 75%;
+    }
+
+.item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
