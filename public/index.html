@@ -2,36 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./images/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Spotify App</title>
+    <link rel="stylesheet" href="/template/src/index.css" />
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <body class="app">
+      <header class="header">
+        <a href="" class="header__logo" href="/">
+          <img src="./images/icon.png" alt="Logo" width="36" heigth="36">
+          <h1 class="header__title">Spotify App</h1>
+        </a>
+        <nav class="header__nav">
+          <a href="/" class="link">Подписка</a>
+          <a href="/" class="link">Профиль</a>
+        </nav>
+      </header>
+    <nav class="accordion">
+      <ul class="tags">
+        <li class="tag">
+          <a href="/" class="nav__link active">
+             <img class="nav__icon" src="./images/home.svg" alt="main">
+             <span class="nav__title">Главная</span>
+          </a>
+       </li>
+        <li class="tag">
+          <a href="/" class="nav__link active">
+            <img class="nav__icon" src="./images/search.svg" alt="search">
+            <span class="nav__title">Поиск</span>
+          </a>
+        </li>
+        <li class="tag">
+          <a href="/" class="nav__link active">
+            <img class="nav__icon" src="./images/playlist.svg" alt="my__playlist">
+            <span class="nav__title">Моя медиатека</span>
+          </a>
+        </li>
+      </ul>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <ul class="tags">
+        <li class="tag">
+          <a href="/" class="nav__link active">
+            <img class="nav__icon" src="./images/create.svg" alt="create">
+            <span class="nav__title">Создать плейлист</span>
+          </a>
+        </li>
+        <li class="tag">
+          <a href="/" class="nav__link active">
+            <img class="nav__icon" src="./images/fav.svg" alt="favorite">
+            <span class="nav__title">Избранное</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="content__new">
+         <h2 class="content__title">Новинки</h2>
+         <div class="content__playlists">
+         </div>
+      </div>
+   </main>
+  <div class="window">
+    <div class="window__body">
+        <div class="window__content">
+          <a href="" class="window__close">X</a>
+          <ul class="window__list"></ul>
+        </div>
+    </div>
+  </div>
+    <footer class="footer">
+      <p>© 2022 anna petrosyan</p>
+        <nav class="footer__nav">
+          <a class="link" href="https://t.me/aptrsn">Telegram</a>
+        </nav>
+    </footer>
   </body>
 </html>
